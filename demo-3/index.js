@@ -1,7 +1,13 @@
 const fastify = require('fastify')({ logger: true})
 
-fastify.register(require('./api-v1.js'), { prefix: '/v1', logLevel: 'error' })
-fastify.register(require('./api-v2.js'), { prefix: '/v2' })
+fastify.register(require('./api-v1.js'), { 
+  prefix: '/v1', 
+  logLevel: 'error' 
+})
+
+fastify.register(require('./api-v2.js'), { 
+  prefix: '/v2'
+})
 
 const startServer = async port => {
   try {

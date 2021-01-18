@@ -3,7 +3,7 @@
 const Fastify = require('fastify')
 const fastify = new Fastify({ 
   logger: {
-    level: 'info'
+    level: 'error'
   } 
 })
 
