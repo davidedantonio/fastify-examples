@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "tap test/**/*.test.js",
+    "test": "tap test/**/*.test.js --jobs=1",
     "start": "fastify start -l info app.js",
     "dev": "fastify start -w -l info -P app.js"
   },
@@ -18,11 +18,14 @@
     "fastify": "^3.0.0",
     "fastify-autoload": "^3.3.1",
     "fastify-cli": "^2.7.0",
+    "fastify-jwt": "^2.3.0",
     "fastify-plugin": "^3.0.0",
-    "fluent-json-schema": "^2.0.3"
+    "fluent-json-schema": "^2.0.3",
+    "secure-password": "^4.0.0"
   },
   "devDependencies": {
     "fastify-mongodb": "^2.0.1",
+    "mongo-clean": "^2.0.0",
     "tap": "^14.11.0"
   }
 }
