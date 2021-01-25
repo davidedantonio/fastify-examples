@@ -7,7 +7,7 @@ module.exports = fp(async (fastify, opts) => {
   const options = Object.assign({
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    url: 'mongodb://localhost:27017/example',
+    url: process.env.MONGO_DB_URL || 'mongodb://localhost:27017/example2',
     name: 'example'
   }, opts.mongodb)
 
