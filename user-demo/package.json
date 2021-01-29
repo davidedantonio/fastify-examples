@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "NODE_OPTIONS=\"-r ./apm.js\" tap test/**/*.test.js --jobs=1",
+    "test": "tap test/**/*.test.js --jobs=1",
     "start": "NODE_ENV=production fastify start -l info app.js",
     "dev": "NODE_OPTIONS=\"-r ./apm.js\" fastify start -w -l info -P app.js"
   },
