@@ -8,6 +8,5 @@ module.exports = fp(async (fastify, opts) => {
     secret: process.env.JWT_SECRET || 'Th1s1sY0ur53cr3t'
   }, opts.jwt)
 
-  console.log(jwtOpts)
   fastify.register(JWT, jwtOpts)
 })
